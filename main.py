@@ -16,12 +16,22 @@ def load_properties_file(filepath, sep='=', comment_char='#'):
     return props
 
 def post_message_on_discord(msg):
-    #get discord channel read and write functionality here
-
     webhook = DiscordWebhook(url=webhook_url , content=msg)
     response = webhook.execute()
-
     print("Done")
+
+def get_latest_video_from_channelname("charitycodes"):
+    latest_video = "...."
+
+    #No Screen Scraping nonsense
+    #Do the google app engine oauth2 like before, and get the jason web token to re-oauth2
+
+    #Get latest
+    return latest_video
+
+def get_date_of_youtube_video(youtube_video_url):
+    date_of_youtube_video = "..."
+    return date_of_youtube_video
 
 
 global_properties = load_properties_file(".config")
@@ -29,6 +39,12 @@ print("global_properties: '" + str(global_properties) + "'")
 
 webhook_url = global_properties["webhook_url"]
 
-post_message_on_discord("testingasdf")
+latest_video = get_latest_video_from_channelname()
+
+print(get_date_of_youtube_video)
+
+
+
+#post_message_on_discord("testingasdf")
 
 
