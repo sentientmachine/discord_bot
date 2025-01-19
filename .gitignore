@@ -1,6 +1,7 @@
 
 #Don't track config.txt containing channel information and other secrets
 config.txt
+.config
 
 
 # Byte-compiled / optimized / DLL files
