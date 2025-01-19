@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 from discord_webhook import DiscordWebhook
 
-
 def load_properties_file(filepath, sep='=', comment_char='#'):
     #Read the file passed as parameter as a properties file.
     props = {}
@@ -26,7 +25,7 @@ def post_message_on_discord(msg):
 
 
 global_properties = load_properties_file(".config")
-print("properties: '" + str(properties) + "'")
+print("global_properties: '" + str(global_properties) + "'")
 
 webhook_url = global_properties["webhook_url"]
 
