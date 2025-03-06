@@ -15,3 +15,17 @@ Post automated messages after criteria are met in a discord channel, read json f
         Successfully installed discord-webhook-1.3.1
 
 
+If A String exists in Discription post to discord, otherwise do nothing.
+
+
+There was a way to see "members only posts", and I need to make sure to see those as well.
+What if you change from a members only post to a public post.  When you post it as public
+make a second update.  So I have to roll my own ID which may be different than the internal 
+videoid.
+
+
+
+
+
+
+
